@@ -13,14 +13,19 @@
 
         <q-toolbar-title> Quasar App </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <q-btn flat round dense :icon="$q.dark.isActive ? 'dark_mode' : 'light_mode'"
+        @click="$q.dark.toggle()"
+        />
+<!--        dark-mode-->
       </q-toolbar>
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
-        <q-item-label header> Essential Links </q-item-label>
-
+        <q-item-label header> Quasar v{{ $q.version }} </q-item-label>
+          <q-avatar size="lg">
+            <img src="logo.png"/>
+          </q-avatar>
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
@@ -59,6 +64,12 @@ const linksList = [
     caption: 'quasar.dev',
     icon: 'school',
     to: '/breakpoints',
+  },
+  {
+    title: 'Classes & variables',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/classes-variables',
   }
 ];
 
