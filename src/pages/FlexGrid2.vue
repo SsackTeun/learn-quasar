@@ -7,14 +7,17 @@
         </q-avatar>
       </div>
       <div class="col-grow column justify-between">
-        <div class="row justify-between">
-          <span>helinlee.gram</span>
-          <div>
-            <q-btn label="프로필 편집"></q-btn>
-            <q-btn label="설정"></q-btn>
+        <div class="row items-center">
+          <span class="text-h6 text-weight-bold">helinlee.gram</span>
+          <q-space/>
+          <div class="q-gutter-x-sm">
+            <q-btn outline color="secondary"  label="프로필 편집1"></q-btn>
+            <q-btn outline color="secondary"  label="프로필 편집2"></q-btn>
+            <q-btn outline color="secondary"  label="프로필 편집3"></q-btn>
+            <q-btn flat color="secondary" icon="more_horiz" label="설정"></q-btn>
           </div>
           </div>
-        <div>
+        <div  class="q-gutter-x-lg">
           <span>게시물 238</span>
           <span>팔로워 2,032</span>
           <span>팔로우 1,432</span>
