@@ -22,10 +22,11 @@
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
+        <q-avatar size="lg">
+          <img src="logo.png"/>
+        </q-avatar>
         <q-item-label header> Quasar v{{ $q.version }} </q-item-label>
-          <q-avatar size="lg">
-            <img src="logo.png"/>
-          </q-avatar>
+
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
@@ -70,6 +71,18 @@ const linksList = [
     caption: 'quasar.dev',
     icon: 'school',
     to: '/classes-variables',
+  },
+  {
+    title: 'Flex Grid 1',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/flex-grid-1',
+  },
+  {
+    title: 'Flex Grid 2',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/flex-grid-2',
   }
 ];
 
